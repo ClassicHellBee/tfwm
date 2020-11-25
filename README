@@ -1,0 +1,38 @@
+TFWM - Tiny Fork Window Manager
+-------------------------------
+TFWM is a small and fast window manager for X11.
+It is based on other window managers of the "tiling" type, is written in C.
+Everything about my new window manager is on github: https://github.com/ClassicHellBee
+
+
+Requirements (software)
+-----------------------
+To compile tfwm, you will need the Xlib header files.
+
+
+Installation
+------------
+Edit config.mk to match your local configuration. The default dir where tfwm is installed is /usr/local
+Once complete, type the following command to build/compile and install tfwm (if necessary as root):
+
+	$ make clean install
+
+
+Executing tfwm
+--------------
+Add the following line to your .xinitrc to start tfwm using startx:
+
+	$ exec tfwm
+
+In order to connect tfwm to a specific display, make sure that the DISPLAY environment variable is set
+correctly, e.g.:
+
+	$ DISPLAY=foo.bar:1 exec tfwm
+
+This will start tfwm on display :1 of the host foo.bar.
+
+Configuration
+-------------
+The configuration of tfwm is done by customizing the wm.h source file. To customize the key binding edit
+dev.c.
+

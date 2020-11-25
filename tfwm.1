@@ -1,0 +1,99 @@
+.TH TFWM 1 tfwm-1.0
+.SH NAME
+tfwm \- tiny fork window manager
+.SH SYNOPSIS
+.B tfwm
+.RB [ \-v ]
+.SH DESCRIPTION
+.SS Overview
+.B tfwm
+is a tiny fork window manager for X11.
+.SS Options
+.TP
+.B \-v
+prints version information to stdout, then exits.
+.SS Status text
+.B tfwm
+reads from stdin to display status text if provided.
+.SS Default Key Bindings
+.TP 16
+.I Key
+.I Action
+.TP
+.B Mod1-Return
+Zoom
+.B window
+to the 
+.B master
+track
+.TP
+.B Mod1-k
+Focus previous
+.B window
+.TP
+.B Mod1-j
+Focus next
+.B window
+.TP
+.B Mod1-m
+Maximize current
+.B window
+.TP
+.B Mod1-[0..n]
+Focus
+.B nth
+tag
+.TP
+.B Mod1-space
+(Re-)arrange
+.B all
+windows tiled
+.TP
+.B Mod1-Shift-space
+(Re-)arrange
+.B all
+windows floating
+.TP
+.B Mod1-Shift-[0..n]
+Apply
+.B nth
+tag to current
+.B window
+.TP
+.B Mod1-Shift-q
+Quit
+.B dwm
+.TP
+.B Mod1-Shift-Return
+Start
+.B terminal
+.TP
+.B Mod1-Shift-w
+Start
+.B web browser
+.TP
+.B Mod1-Shift-l
+Lock
+.B screen
+.TP
+.B Control-[0..n]
+Append
+.B nth
+tag to cureent
+.B window
+.SS Default Mouse Bindings
+.TP
+.B Mod1-Button1
+Moves current
+.B window
+while dragging
+.TP
+.B Mod1-Button2
+Lowers current
+.B window
+.TP
+.B Mod1-Button3
+Resizes current
+.B window
+while dragging
+
